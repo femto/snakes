@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54a34bea-821f-419b-bc5c-c14e458c953d" name="Default" comment="">
-      <change type="DELETED" beforePath="E:\ruby-project\eggs\&quot;复件test4.rb&quot;" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.rb" afterPath="$PROJECT_DIR$/test.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test1.rb" afterPath="$PROJECT_DIR$/test1.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test2.rb" afterPath="$PROJECT_DIR$/test2.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test3.rb" afterPath="$PROJECT_DIR$/test3.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test4.rb" afterPath="$PROJECT_DIR$/test4.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test5.rb" afterPath="$PROJECT_DIR$/test5.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README" afterPath="$PROJECT_DIR$/README" />
     </list>
     <ignored path="eggs.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -78,10 +72,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test6.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="test6.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test6.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="22" selection-start="131" selection-end="147" vertical-scroll-proportion="0.13892908">
+            <state line="6" column="22" selection-start="131" selection-end="147" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="0" selection-start="48" selection-end="48" vertical-scroll-proportion="0.023154847">
               <folding />
             </state>
           </provider>
@@ -137,6 +140,7 @@
         <option value="$PROJECT_DIR$/test2.rb" />
         <option value="$PROJECT_DIR$/test3.rb" />
         <option value="$PROJECT_DIR$/test4.rb" />
+        <option value="$PROJECT_DIR$/README" />
       </list>
     </option>
   </component>
@@ -485,7 +489,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test6.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="22" selection-start="131" selection-end="147" vertical-scroll-proportion="0.13892908">
+        <state line="6" column="22" selection-start="131" selection-end="147" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="48" selection-end="48" vertical-scroll-proportion="0.023154847">
           <folding />
         </state>
       </provider>

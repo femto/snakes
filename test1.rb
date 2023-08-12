@@ -93,7 +93,7 @@ def turn
   if gems.empty? #no gems find
     if obstacle(head, current_direction)
       available_direction=available_direction-[current_direction]
-      dir = available_direction[rand(available_direction.size)]
+      dir = select_best_direction(available_direction, head, current_direction)
     else
       dir = current_direction
     end
@@ -107,7 +107,7 @@ def turn
     #trying to avoid obstacles in current_dir
     if obstacle(head, dir)
       available_direction=available_direction-[dir]
-      dir = available_direction[rand(available_direction.size)]
+      dir = select_best_direction(available_direction, head, current_direction)
     else
       #dir = dir
     end

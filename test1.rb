@@ -103,27 +103,27 @@ def turn
     #trying to get nearest_gem
     dir = calc_dir(head, path)
 
+    dir = current_direction if dir == -1
+    #trying to avoid obstacles in current_dir
+    if obstacle(head, dir)
+      available_direction=available_direction-[dir]
+      dir = available_direction[rand(available_direction.size)]
+    else
+      #dir = dir
+    end
 
-
-    #trying to find a best direction
-#    dir = -1
-#    if gems[nearest_gem_index][0] > head[0]
-#      if available_direction.include?(2) && !obstacle(head, dir)
-#        dir = 2
-#      else
-#        if gems[nearest_gem_index][1] > head[1]
-#          if available_direction.include?(3) && !obstacle(head, dir)
-#            dir = 3
-#          end
-#        elsif gems[nearest_gem_index][1] == head[1]
-#          dir = current_direction #even we walk left
-#        elsif gems[nearest_gem_index][1] < head[1]
-#          #try 1
-#          if available_direction.include?(1) && !obstacle(head, dir)
-#            dir = 1
-#          end
-#        end
-#      end
+    p "current direction: #{current_direction}"
+    puts "to turn direction is #{dir}"
+  end #for avaiable gem
+  
+  request = Net::HTTP::Post.new("/room/#{@roomno}/turn")
+  request.set_form_data(:id => @me["id"], :round => @info["round"], :direction => dir)
+  response = @http.request(request)
+  result = JSON.parse(response.body)
+  @turn, @info = result[0], result[1]
+  puts "current round: #{@info["round"]}, alive #{@info["snakes"][@me['seq']]['alive']}"
+  return @turn, @info
+end
 #    elsif gems[nearest_gem_index][0] == head[0]
 #      if gems[nearest_gem_index][1] > head[1]
 #          if available_direction.include?(3) && !obstacle(head, dir)
